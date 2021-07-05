@@ -274,6 +274,7 @@ nav {
   background: var(--background);
   padding: 5rem 10rem;
   text-align: center;
+  opacity: 0.9;
 }
 /* GALLERY END */
 
@@ -291,7 +292,7 @@ nav {
 }
 .form-wrapper h2 {
   font-size: var(--big);
-  margin-bottom: 5rem;
+  margin: 5rem 0rem;
 }
 .form-wrapper label {
   display: block;
@@ -325,6 +326,7 @@ footer {
   color: white;
   padding: 3rem 5%;
   align-items: center;
+  flex-wrap: wrap;
 }
 footer ul {
   display: flex;
@@ -334,13 +336,13 @@ footer ul {
 }
 footer h4 {
   flex: 3 1 40rem;
+  font-size: calc(1.4rem + 1vw);
 }
 #github {
   object-fit: cover;
   width: 4rem;
   height: 4rem;
 }
-
 /* FOOTER ENDS */
 
 /* MEDIA QUERIES */
@@ -422,5 +424,34 @@ footer h4 {
   .gallery-head {
     display: none;
   }
+
+  /* CONTACT */
+  .contact img {
+    display: none;
+  }
+  .contact input {
+    width: 100%;
+  }
+
+  /*FOOTER*/
+  footer ul {
+    order: 1;
+  }
+  footer h4 {
+    order: 2;
+    text-align: center;
+    padding: 1rem;
+  }
 }
 /* MEDIA QUERIES END */
+
+@media screen and (min-width: 1700px) {
+  html {
+    --header1: 3rem;
+    --header2: 5rem;
+    --header3: 4rem;
+    --header4: 3rem;
+    --text: 3rem;
+    --big: 8rem;
+  }
+}
