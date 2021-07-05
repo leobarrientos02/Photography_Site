@@ -31,6 +31,7 @@ html {
   --special-color: #906272;
   --background: #414141;
   --gray-text: #525252;
+  scroll-behavior: smooth;
 }
 h1 {
   /*Variable*/
@@ -357,6 +358,7 @@ footer h4 {
   .burger {
     position: relative;
     display: block;
+    cursor: pointer;
   }
   .burger span {
     padding: 0.2rem 2rem;
@@ -379,8 +381,9 @@ footer h4 {
     left: 100%;
     flex-direction: column;
     align-items: center;
-    transition: transfrom 1s ease;
+    transition: transform 1s ease;
   }
+  /*
   .menu-check {
     display: block;
     position: absolute;
@@ -393,6 +396,7 @@ footer h4 {
     opacity: 0;
     z-index: 100;
   }
+  
   .menu-check:checked + .nav-links {
     transform: translateX(-100%);
   }
@@ -408,6 +412,22 @@ footer h4 {
   .menu-check:checked ~ .burger span:nth-child(3) {
     transform: rotateZ(-45deg) translateY(-300%);
   }
+  */
+  .nav-open {
+    transform: translateX(-100%);
+  }
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(300%);
+    background: white;
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background: white;
+  }
+
   /* ABOUT SECTION */
   .about-text div {
     padding: 3rem 3rem;
