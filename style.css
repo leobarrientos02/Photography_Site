@@ -148,8 +148,8 @@ nav {
   bottom: 0;
   left: -20%;
   z-index: -1;
-  width: 80%;
-  height: 80%;
+  max-width: 80%;
+  max-height: 80%;
   /* Plant Animation */
   transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
   animation: plant-entrance 1.5s ease-in-out 0.5s forwards,
@@ -195,6 +195,13 @@ nav {
 }
 
 @media screen and (max-width: 842px) {
+  .hero {
+    width: 100%;
+  }
+  .hero-introduction p {
+    padding: 5rem 3rem;
+  }
+  /* BURGER Section */
   .burger {
     position: relative;
     display: block;
