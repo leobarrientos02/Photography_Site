@@ -1,0 +1,24 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Zen Tokyo Zoo", cursive;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  font-size: 3rem;
+  background-color: royalblue;
+  border: dashed black 8px;
+}
+body h3 {
+  font-size: 2rem;
+}
